@@ -1,0 +1,15 @@
+C:\Users\DEKO\Documents\Estudio\Programacion\Programar\C#2\ProyectoLinq\bin\Debug\net7.0\ProyectoLinq.exe
+C:\Users\DEKO\Documents\Estudio\Programacion\Programar\C#2\ProyectoLinq\bin\Debug\net7.0\ProyectoLinq.deps.json
+C:\Users\DEKO\Documents\Estudio\Programacion\Programar\C#2\ProyectoLinq\bin\Debug\net7.0\ProyectoLinq.runtimeconfig.json
+C:\Users\DEKO\Documents\Estudio\Programacion\Programar\C#2\ProyectoLinq\bin\Debug\net7.0\ProyectoLinq.dll
+C:\Users\DEKO\Documents\Estudio\Programacion\Programar\C#2\ProyectoLinq\bin\Debug\net7.0\ProyectoLinq.pdb
+C:\Users\DEKO\Documents\Estudio\Programacion\Programar\C#2\ProyectoLinq\obj\Debug\net7.0\ProyectoLinq.csproj.AssemblyReference.cache
+C:\Users\DEKO\Documents\Estudio\Programacion\Programar\C#2\ProyectoLinq\obj\Debug\net7.0\ProyectoLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DEKO\Documents\Estudio\Programacion\Programar\C#2\ProyectoLinq\obj\Debug\net7.0\ProyectoLinq.AssemblyInfoInputs.cache
+C:\Users\DEKO\Documents\Estudio\Programacion\Programar\C#2\ProyectoLinq\obj\Debug\net7.0\ProyectoLinq.AssemblyInfo.cs
+C:\Users\DEKO\Documents\Estudio\Programacion\Programar\C#2\ProyectoLinq\obj\Debug\net7.0\ProyectoLinq.csproj.CoreCompileInputs.cache
+C:\Users\DEKO\Documents\Estudio\Programacion\Programar\C#2\ProyectoLinq\obj\Debug\net7.0\ProyectoLinq.dll
+C:\Users\DEKO\Documents\Estudio\Programacion\Programar\C#2\ProyectoLinq\obj\Debug\net7.0\refint\ProyectoLinq.dll
+C:\Users\DEKO\Documents\Estudio\Programacion\Programar\C#2\ProyectoLinq\obj\Debug\net7.0\ProyectoLinq.pdb
+C:\Users\DEKO\Documents\Estudio\Programacion\Programar\C#2\ProyectoLinq\obj\Debug\net7.0\ProyectoLinq.genruntimeconfig.cache
+C:\Users\DEKO\Documents\Estudio\Programacion\Programar\C#2\ProyectoLinq\obj\Debug\net7.0\ref\ProyectoLinq.dll
