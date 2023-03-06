@@ -1,17 +1,69 @@
 public class LinqQueries
 {
-    private List<Book> librosCollection = new List<Book> ();
+    private List<Book> librosCollection = new List<Book>();
     public LinqQueries()
     {
-        using(StreamReader reader = new StreamReader("books.json"))
+        using (StreamReader reader = new StreamReader("books.json"))
         {
             string json = reader.ReadToEnd();
-            this.librosCollection = System.Text.Json.JsonSerializer.Deserialize<List<Book>>(json, new System.Text.Json.JsonSerializerOptions() {PropertyNameCaseInsensitive = true});
+            this.librosCollection = System.Text.Json.JsonSerializer.Deserialize<List<Book>>(json, new System.Text.Json.JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
         }
     }
 
     public IEnumerable<Book> TodaLaColeccion()
     {
         return librosCollection;
+    }
+
+    public IEnumerable<Book> LibrosDespuesdel2000()
+    {
+        //Metodo extendido
+        //return librosCollection.Where(p=> p.PublishedDate.Year > 2000);
+
+        //query expression
+
+        return from l in librosCollection where l.PublishedDate.Year > 2000 select l;
+    }
+
+    public IEnumerable<Book> LibroConMasDe250PaginasConPalabrasInAction()
+    {
+        //Extension methods
+        //return librosCollection.Where(p => p.PageCount > 250 && p.Title.Contains("in Action"));
+
+        //Query Expression
+        return from l in librosCollection where l.PageCount > 250 && l.Title.Contains("in Action") select l;
+    }
+
+    public bool TodosLosLibrosTienenEstatus()
+    {
+        return librosCollection.All(p=>p.Status != string.Empty);
+    }
+    public bool AlgunLibroFuePublicadoEn2005()
+    {
+        return librosCollection.Any(p=> p.PublishedDate.Year == 2005);
+    }
+
+    public IEnumerable<Book> LibrosDePython(){
+        return librosCollection.Where(p=>p.Categories.Contains("Python"));
+    }
+
+    public IEnumerable<Book> LibrosDeJavaPorNombreAscendete()
+    {
+        return librosCollection.Where(p=> p.Categories.Contains("Java")).OrderBy(p=> p.Title);
+    }
+
+    public IEnumerable<Book> LibrosConMasDe450Paginas ()
+    {
+        return librosCollection.Where(p=> p.PageCount > 450).OrderByDescending(p=> p.PageCount);
+    }
+
+    public IEnumerable<Book> TresPrimerosLibrosOrdenadosPorFecha()
+    {
+        return librosCollection.Where(p=> p.Categories.Contains("Java")).OrderBy(p=> p.PublishedDate).TakeLast(3);
+    }
+
+    public IEnumerable<Book> TercerYCuartoLibrodeMasDe400Paginas()
+    {
+        return librosCollection.Where(p=> p.PageCount > 400).Take(4).Skip(2);
     }
 }
